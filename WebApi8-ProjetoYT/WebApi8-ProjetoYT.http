@@ -1,0 +1,6 @@
+@WebApi8_ProjetoYT_HostAddress = http://localhost:5078
+
+GET {{WebApi8_ProjetoYT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
