@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApi8_ProjetoYT.Dto.Autor;
 using WebApi8_ProjetoYT.Models;
 using WebApi8_ProjetoYT.Services.Autor;
 
@@ -36,6 +37,12 @@ namespace WebApi8_ProjetoYT.Controllers
             return Ok(autor);
         }
 
+        [HttpPost("CriarAutor")]
+        public async Task<ActionResult<ResponseModel<AutorModel>>> CriarAutor(AutorCriacaoDto autorCriacaoDto)
+        {
+            var autores = await _autorInterface.CriarAutor(autorCriacaoDto);
+            return Ok(autores);
+        }
 
     }
 }
