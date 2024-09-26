@@ -12,8 +12,8 @@ namespace WebApi8_ProjetoYT.Controllers
     {
 
         private readonly IAutorInterface _autorInterface;
-        public AutorController(IAutorInterface autorinterface) 
-        { 
+        public AutorController(IAutorInterface autorinterface)
+        {
             _autorInterface = autorinterface;
         }
 
@@ -38,10 +38,26 @@ namespace WebApi8_ProjetoYT.Controllers
         }
 
         [HttpPost("CriarAutor")]
-        public async Task<ActionResult<ResponseModel<AutorModel>>> CriarAutor(AutorCriacaoDto autorCriacaoDto)
+        public async Task<ActionResult<ResponseModel<List<AutorModel>>>> CriarAutor(AutorCriacaoDto autorCriacaoDto)
         {
             var autores = await _autorInterface.CriarAutor(autorCriacaoDto);
             return Ok(autores);
+        }
+
+        [HttpPut("EditarAutor")]
+        public async Task<ActionResult<ResponseModel<List<AutorModel>>>> EditarAutor(AutorEdicaoDto autorEdicaoDto)
+        {
+            var autores = await _autorInterface.EditarAutor(autorEdicaoDto);
+            return Ok(autores);
+
+        }
+
+        [HttpDelete("ExcluirAutor")]
+        public async Task<ActionResult<ResponseModel<List<AutorModel>>>> ExcluirAutor(int idAutor)
+        {
+            var autores = await _autorInterface.ExcluirAutor(idAutor);
+            return Ok(autores);
+
         }
 
     }
