@@ -55,7 +55,7 @@ Este projeto foi desenvolvido durante o curso de **Web API com .NET 8 e SQL Serv
 4. Abra o Console do Gerenciador de Pacotes e execute os seguintes comandos para aplicar as migrações e criar o banco de dados:
 Update-Database
 
-5. Execute o projeto e acesse o Swagger em http://localhost:5000/swagger para testar os endpoints.
+5. Execute o projeto e acesse o Swagger em https://localhost:7053/swagger/ para testar os endpoints.
 
 
 ## Endpoints Principais
