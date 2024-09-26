@@ -13,7 +13,13 @@ Este projeto foi desenvolvido durante o curso de **Web API com .NET 8 e SQL Serv
   - Editar autor
   - Excluir autor
 
-- **CRUD de Livros**: Em andamento
+- **CRUD de Livros**:
+- - Criar novo livro
+  - Listar todos os livros
+  - Listar livro por ID
+  - Listar livros por ID do autor
+  - Editar livro
+  - Excluir livro
 
 - **Relacionamento Autor-Livro**:
   - Um autor pode ter vários livros (relação 1:N)
@@ -64,6 +70,12 @@ Este projeto foi desenvolvido durante o curso de **Web API com .NET 8 e SQL Serv
 - `PUT /api/Autor/EditarAutor`: Edita um autor existente
 - `DELETE /api/Autor/ExcluirAutor`: Exclui um autor
 
-### Livros - Em andamento
+### Livros 
+- `GET /api/Livro/ListarLivros`: Lista todos os livros
+- `GET /api/Livro/BuscarLivroPorId/{idLivro}`: Retorna um livro pelo ID
+- `GET /api/Livro/BuscarLivroPorIdAutor/{idAutor}`: Retorna um ou mais livros pelo ID do autor
+- `POST /api/Livro/CriarLivro`: Cria um novo livro
+- `PUT /api/Livro/EditarLivro`: Edita um livro existente
+- `DELETE /api/Livro/ExcluirLivro`: Exclui um livro
 
 Este projeto foi desenvolvido por mim durante o curso de Web API com .NET 8 e SQL Server. Se tiver alguma dúvida ou sugestão, fique à vontade para entrar em contato!
