@@ -61,17 +61,13 @@ Update-Database
 ## Endpoints Principais
 
 ### Autores
-- `GET /api/autores`: Lista todos os autores
-- `GET /api/autores/{id}`: Retorna um autor pelo ID
-- `POST /api/autores`: Cria um novo autor
-- `PUT /api/autores/{id}`: Edita um autor existente
-- `DELETE /api/autores/{id}`: Exclui um autor
+- `GET /api/Autor/ListarAutores`: Lista todos os autores
+- `GET /api/Autor/BuscarAutorPorId/{idAutor}`: Retorna um autor pelo ID
+- `GET /api/Autor/BuscarAutorPorIdLivro/{idLivro}`: Retorna um autor pelo ID do livro
+- `POST /api/Autor/CriarAutor`: Cria um novo autor
+- `PUT /api/Autor/EditarAutor`: Edita um autor existente
+- `DELETE /api/Autor/ExcluirAutor`: Exclui um autor
 
-### Livros
-- `GET /api/livros`: Lista todos os livros
-- `GET /api/livros/{id}`: Retorna um livro pelo ID
-- `POST /api/livros`: Cria um novo livro
-- `PUT /api/livros/{id}`: Edita um livro existente
-- `DELETE /api/livros/{id}`: Exclui um livro
+### Livros - Em andamento
 
 Este projeto foi desenvolvido por mim durante o curso de Web API com .NET 8 e SQL Server. Se tiver alguma dúvida ou sugestão, fique à vontade para entrar em contato!
