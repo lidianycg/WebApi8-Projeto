@@ -9,15 +9,11 @@ Este projeto foi desenvolvido durante o curso de **Web API com .NET 8 e SQL Serv
   - Criar novo autor
   - Listar todos os autores
   - Listar autor por ID
+  - Listar autor por ID do livro
   - Editar autor
   - Excluir autor
 
-- **CRUD de Livros**:
-  - Criar novo livro
-  - Listar todos os livros
-  - Listar livro por ID
-  - Editar livro
-  - Excluir livro
+- **CRUD de Livros**: Em andamento
 
 - **Relacionamento Autor-Livro**:
   - Um autor pode ter vários livros (relação 1:N)
