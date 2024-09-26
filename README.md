@@ -14,7 +14,7 @@ Este projeto foi desenvolvido durante o curso de **Web API com .NET 8 e SQL Serv
   - Excluir autor
 
 - **CRUD de Livros**:
-- - Criar novo livro
+  - Criar novo livro
   - Listar todos os livros
   - Listar livro por ID
   - Listar livros por ID do autor
