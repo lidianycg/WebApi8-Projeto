@@ -40,7 +40,7 @@ Este projeto foi desenvolvido durante o curso de **Web API com .NET 8 e SQL Serv
 
 1. Clone o repositório
    ```bash
-   git clone https://github.com/seuusuario/seurepositorio.git
+   git clone https://github.com/lidianycg/WebApi8-Projeto.git
 2. Abra o projeto no Visual Studio.
 
 3. Configure a string de conexão com o SQL Server no arquivo appsettings.json:
